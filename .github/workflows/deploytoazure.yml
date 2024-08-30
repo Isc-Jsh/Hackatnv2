@@ -1,4 +1,31 @@
 name: Deploy to Azure
+<<<<<<< HEAD
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Log in to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Build and deploy Container App
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          appSourcePath: ${{ github.workspace }}
+          acrName: ${{ vars.AZURE_PREFIX }}acr
+          resourceGroup: ${{ vars.AZURE_RG }}
+          containerAppName: ${{ vars.AZURE_PREFIX }}containerapp
+          containerAppEnvironment: ${{ vars.AZURE_PREFIX }}containerappenvironment
+=======
   on:
     push:
       branches:
@@ -24,3 +51,4 @@ name: Deploy to Azure
             resourceGroup: ${{ vars.AZURE_RG }}
             containerAppName: ${{ vars.AZURE_PREFIX }}containerapp
             containerAppEnvironment: ${{ vars.AZURE_PREFIX }}containerappenvironment
+>>>>>>> origin/main
