@@ -1,7 +1,6 @@
 @minLength(3)
 @maxLength(11)
 param namePrefix string
-
 param location string = resourceGroup().location
 
 resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2021-04-15' = {
