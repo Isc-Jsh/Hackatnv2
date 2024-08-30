@@ -1,5 +1,4 @@
-name: Deploy to Azure
-<<<<<<< HEAD
+name: "Deploy to Azure"
 on:
   push:
     branches:
@@ -25,7 +24,6 @@ jobs:
           resourceGroup: ${{ vars.AZURE_RG }}
           containerAppName: ${{ vars.AZURE_PREFIX }}containerapp
           containerAppEnvironment: ${{ vars.AZURE_PREFIX }}containerappenvironment
-=======
   on:
     push:
       branches:
@@ -51,4 +49,4 @@ jobs:
             resourceGroup: ${{ vars.AZURE_RG }}
             containerAppName: ${{ vars.AZURE_PREFIX }}containerapp
             containerAppEnvironment: ${{ vars.AZURE_PREFIX }}containerappenvironment
->>>>>>> origin/main
+
