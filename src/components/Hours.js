@@ -23,8 +23,8 @@ import React from "react";
         // display today and the hours in an div with an id of hours
         return (
             <div id="hours">
-                <h2>Today's Hours</h2>
-               
+                <h2>ing.jesus.sanchez@gmail.com</h2>
+               <h2><https://portal.azure.com/#@iscjshhotmail.onmicrosoft.com/resource/subscriptions/62193480-e846-4a36-802a-96e1425c3707/resourceGroups/pets-workshop/providers/Microsoft.App/containerApps/isc2containerapp/containerapp/h2>
             </div>
         )
     }
